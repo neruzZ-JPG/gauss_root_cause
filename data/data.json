@@ -1,0 +1,31 @@
+[
+    {
+        "id": 4, 
+        "metrics": "db_metrics_cpu.csv",
+        "root_causes":[
+            "cpu_useage"
+        ]
+    },
+    {
+        "id": 5, 
+        "metrics": "db_metrics_io.csv",
+        "root_causes":[
+            "cpu_useage"
+        ]
+    },
+    {
+        "id": 6, 
+        "metrics": "db_metrics_memory.csv",
+        "root_causes":[
+            "kB_wr/s",
+            "kB_rd/s"
+        ]
+    },
+    {
+        "id": 7, 
+        "metrics": "wdr_metrics.csv",
+        "root_causes":[
+            "EffectiveCPU_MetricValue"
+        ]
+    }
+]
