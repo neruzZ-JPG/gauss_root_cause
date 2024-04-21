@@ -1,0 +1,174 @@
+{
+    "nodes": [
+        {
+            "id": "kB_rd/s"
+        },
+        {
+            "id": "kB_wr/s"
+        },
+        {
+            "id": "disk_total_read"
+        },
+        {
+            "id": "physical_reads_per_second"
+        },
+        {
+            "id": "rows_inserted_per_second"
+        },
+        {
+            "id": "filesys_use_rate"
+        }
+    ],
+    "edges": [
+        {
+            "source": "kB_rd/s",
+            "target": "kB_wr/s",
+            "weight": 0.9365352016736986
+        },
+        {
+            "source": "kB_rd/s",
+            "target": "disk_total_read",
+            "weight": 0.47248890787031134
+        },
+        {
+            "source": "kB_rd/s",
+            "target": "physical_reads_per_second",
+            "weight": 0.006799715032396688
+        },
+        {
+            "source": "kB_rd/s",
+            "target": "rows_inserted_per_second",
+            "weight": 0.010313937782428133
+        },
+        {
+            "source": "kB_rd/s",
+            "target": "filesys_use_rate",
+            "weight": 0.27715541421591716
+        },
+        {
+            "source": "kB_wr/s",
+            "target": "kB_rd/s",
+            "weight": 0.9365352016736986
+        },
+        {
+            "source": "kB_wr/s",
+            "target": "disk_total_read",
+            "weight": 0.3544457554413426
+        },
+        {
+            "source": "kB_wr/s",
+            "target": "physical_reads_per_second",
+            "weight": 0.14560334984892953
+        },
+        {
+            "source": "kB_wr/s",
+            "target": "rows_inserted_per_second",
+            "weight": 0.14477689741957483
+        },
+        {
+            "source": "kB_wr/s",
+            "target": "filesys_use_rate",
+            "weight": 0.5056683906470232
+        },
+        {
+            "source": "disk_total_read",
+            "target": "kB_rd/s",
+            "weight": 0.47248890787031134
+        },
+        {
+            "source": "disk_total_read",
+            "target": "kB_wr/s",
+            "weight": 0.3544457554413426
+        },
+        {
+            "source": "disk_total_read",
+            "target": "physical_reads_per_second",
+            "weight": 0.2790354057460982
+        },
+        {
+            "source": "disk_total_read",
+            "target": "rows_inserted_per_second",
+            "weight": 0.27087952682373473
+        },
+        {
+            "source": "disk_total_read",
+            "target": "filesys_use_rate",
+            "weight": 0.12205893718415607
+        },
+        {
+            "source": "physical_reads_per_second",
+            "target": "kB_rd/s",
+            "weight": 0.006799715032396688
+        },
+        {
+            "source": "physical_reads_per_second",
+            "target": "kB_wr/s",
+            "weight": 0.14560334984892953
+        },
+        {
+            "source": "physical_reads_per_second",
+            "target": "disk_total_read",
+            "weight": 0.2790354057460982
+        },
+        {
+            "source": "physical_reads_per_second",
+            "target": "rows_inserted_per_second",
+            "weight": 0.992018719757696
+        },
+        {
+            "source": "physical_reads_per_second",
+            "target": "filesys_use_rate",
+            "weight": 0.32100835548162204
+        },
+        {
+            "source": "rows_inserted_per_second",
+            "target": "kB_rd/s",
+            "weight": 0.010313937782428133
+        },
+        {
+            "source": "rows_inserted_per_second",
+            "target": "kB_wr/s",
+            "weight": 0.14477689741957483
+        },
+        {
+            "source": "rows_inserted_per_second",
+            "target": "disk_total_read",
+            "weight": 0.27087952682373473
+        },
+        {
+            "source": "rows_inserted_per_second",
+            "target": "physical_reads_per_second",
+            "weight": 0.992018719757696
+        },
+        {
+            "source": "rows_inserted_per_second",
+            "target": "filesys_use_rate",
+            "weight": 0.30734119135525634
+        },
+        {
+            "source": "filesys_use_rate",
+            "target": "kB_rd/s",
+            "weight": 0.27715541421591716
+        },
+        {
+            "source": "filesys_use_rate",
+            "target": "kB_wr/s",
+            "weight": 0.5056683906470232
+        },
+        {
+            "source": "filesys_use_rate",
+            "target": "disk_total_read",
+            "weight": 0.12205893718415607
+        },
+        {
+            "source": "filesys_use_rate",
+            "target": "physical_reads_per_second",
+            "weight": 0.32100835548162204
+        },
+        {
+            "source": "filesys_use_rate",
+            "target": "rows_inserted_per_second",
+            "weight": 0.30734119135525634
+        }
+    ]
+}
