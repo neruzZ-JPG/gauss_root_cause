@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "metrics": "metrics.csv",
+        "root_causes": [
+            "cpu_useage",
+            "filesys_use_rate",
+            "cache_hit_rate"
+        ]
+    },
+    {
+        "id": 2,
+        "metrics": "db_metrics_6.csv",
+        "root_causes":[
+            "memory_useage"
+        ]
+    },
+    {
+        "id": 3,
+        "metrics": "db_metrics_4.csv",
+        "root_causes":[
+            "memory_useage"
+        ]
+    }
+]
