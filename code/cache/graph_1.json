@@ -1,0 +1,78 @@
+{
+    "nodes": [
+        {
+            "id": "memory_useage"
+        },
+        {
+            "id": "kB_rd/s"
+        },
+        {
+            "id": "kB_wr/s"
+        },
+        {
+            "id": "active_session"
+        }
+    ],
+    "edges": [
+        {
+            "source": "memory_useage",
+            "target": "kB_rd/s",
+            "weight": 0.7803218508304725
+        },
+        {
+            "source": "memory_useage",
+            "target": "kB_wr/s",
+            "weight": 0.4877582581042132
+        },
+        {
+            "source": "memory_useage",
+            "target": "active_session",
+            "weight": -0.5065182688224347
+        },
+        {
+            "source": "kB_rd/s",
+            "target": "memory_useage",
+            "weight": 0.7803218508304725
+        },
+        {
+            "source": "kB_rd/s",
+            "target": "kB_wr/s",
+            "weight": 0.8482532480238262
+        },
+        {
+            "source": "kB_rd/s",
+            "target": "active_session",
+            "weight": -0.689447996236452
+        },
+        {
+            "source": "kB_wr/s",
+            "target": "memory_useage",
+            "weight": 0.4877582581042132
+        },
+        {
+            "source": "kB_wr/s",
+            "target": "kB_rd/s",
+            "weight": 0.8482532480238262
+        },
+        {
+            "source": "kB_wr/s",
+            "target": "active_session",
+            "weight": -0.4503690074566337
+        },
+        {
+            "source": "active_session",
+            "target": "memory_useage",
+            "weight": -0.5065182688224347
+        },
+        {
+            "source": "active_session",
+            "target": "kB_rd/s",
+            "weight": -0.689447996236452
+        },
+        {
+            "source": "active_session",
+            "target": "kB_wr/s",
+            "weight": -0.4503690074566337
+        }
+    ]
+}
