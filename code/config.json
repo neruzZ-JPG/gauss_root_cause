@@ -1,0 +1,11 @@
+{
+    "smooth_method": "from_paper",
+    "anomaly_detection_method": "fluxInfer",
+    "data_dir": "./data",
+    "data_file": "data.json",
+    "cache_dir": "./cache",
+    "correlation_method": "pearson",
+    "graph_threshold": 0.5,
+    "graph_constructing_method": "WUDG",
+    "ranking_method": "pagerank"
+}

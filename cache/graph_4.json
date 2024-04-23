@@ -1,0 +1,121 @@
+{
+    "nodes": [
+        {
+            "id": "kB_rd/s"
+        },
+        {
+            "id": "kB_wr/s"
+        },
+        {
+            "id": "disk_total_read"
+        },
+        {
+            "id": "error_cnt_per_second"
+        },
+        {
+            "id": "active_session"
+        }
+    ],
+    "edges": [
+        {
+            "source": "kB_rd/s",
+            "target": "kB_wr/s",
+            "weight": 0.8110389428161696
+        },
+        {
+            "source": "kB_rd/s",
+            "target": "disk_total_read",
+            "weight": 0.25602643986303125
+        },
+        {
+            "source": "kB_rd/s",
+            "target": "error_cnt_per_second",
+            "weight": 0.017218845734403736
+        },
+        {
+            "source": "kB_rd/s",
+            "target": "active_session",
+            "weight": 0.6622387828174039
+        },
+        {
+            "source": "kB_wr/s",
+            "target": "kB_rd/s",
+            "weight": 0.8110389428161696
+        },
+        {
+            "source": "kB_wr/s",
+            "target": "disk_total_read",
+            "weight": 0.14970232489383406
+        },
+        {
+            "source": "kB_wr/s",
+            "target": "error_cnt_per_second",
+            "weight": 0.07339869612481666
+        },
+        {
+            "source": "kB_wr/s",
+            "target": "active_session",
+            "weight": 0.82825632399225
+        },
+        {
+            "source": "disk_total_read",
+            "target": "kB_rd/s",
+            "weight": 0.25602643986303125
+        },
+        {
+            "source": "disk_total_read",
+            "target": "kB_wr/s",
+            "weight": 0.14970232489383406
+        },
+        {
+            "source": "disk_total_read",
+            "target": "error_cnt_per_second",
+            "weight": 0.09819932909696838
+        },
+        {
+            "source": "disk_total_read",
+            "target": "active_session",
+            "weight": 0.11492256563431841
+        },
+        {
+            "source": "error_cnt_per_second",
+            "target": "kB_rd/s",
+            "weight": 0.017218845734403736
+        },
+        {
+            "source": "error_cnt_per_second",
+            "target": "kB_wr/s",
+            "weight": 0.07339869612481666
+        },
+        {
+            "source": "error_cnt_per_second",
+            "target": "disk_total_read",
+            "weight": 0.09819932909696838
+        },
+        {
+            "source": "error_cnt_per_second",
+            "target": "active_session",
+            "weight": 0.06014096059364604
+        },
+        {
+            "source": "active_session",
+            "target": "kB_rd/s",
+            "weight": 0.6622387828174039
+        },
+        {
+            "source": "active_session",
+            "target": "kB_wr/s",
+            "weight": 0.82825632399225
+        },
+        {
+            "source": "active_session",
+            "target": "disk_total_read",
+            "weight": 0.11492256563431841
+        },
+        {
+            "source": "active_session",
+            "target": "error_cnt_per_second",
+            "weight": 0.06014096059364604
+        }
+    ]
+}
