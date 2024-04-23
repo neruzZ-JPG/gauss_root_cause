@@ -43,20 +43,12 @@ if __name__ == "__main__":
         id = data_info['id']
         datas = read_data(f'{data_dir}/csv/{data_info["metrics"]}')
         anomalies = {}
-        anomaly_scores = {}
         for key in datas.keys():
             kpi = datas[key]
             smoothed_kpi, segments = data_smoothing(kpi, smooth_method)
-            # if anomaly_detection(smoothed_kpi, segments, anomoly_detection_method):
-            #     anomalies[key] = smoothed_kpi
-            tf, value =  anomaly_detection(smoothed_kpi, segments, anomoly_detection_method)
-            if tf:
+            if anomaly_detection(smoothed_kpi, segments, anomoly_detection_method):
                 anomalies[key] = smoothed_kpi
-                anomaly_scores[key] = value
         # 存异常文件
         with open(f'{cache_dir}/anomalies_{id}.json', 'w', encoding='utf-8') as f:
             json.dump(anomalies, f, ensure_ascii=False, indent=4)
-        anomaly_scores = dict(sorted(anomaly_scores.items(), key=lambda item: item[1], reverse=True))            
-        with open(f'{cache_dir}/anomalies__score_{id}.json', 'w', encoding='utf-8') as f:
-            json.dump(anomaly_scores, f, ensure_ascii=False, indent=4)
-    ic("step1 done")
+    logging.info("step1 done")

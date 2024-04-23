@@ -27,5 +27,40 @@
         "root_causes":[
             "EffectiveCPU_MetricValue"
         ]
+    },
+    {
+        "id": 8, 
+        "metrics": "fault_fault_2-1.csv",
+        "root_causes":[
+            "EffectiveCPU_MetricValue"
+        ]
+    },
+    {
+        "id": 9, 
+        "metrics": "fault_fault_2-2.csv",
+        "root_causes":[
+            "EffectiveCPU_MetricValue"
+        ]
+    },
+    {
+        "id": 10, 
+        "metrics": "fault_fault_2-3.csv",
+        "root_causes":[
+            "EffectiveCPU_MetricValue"
+        ]
+    },
+    {
+        "id": 11, 
+        "metrics": "fault_fault_2-4.csv",
+        "root_causes":[
+            "EffectiveCPU_MetricValue"
+        ]
+    },
+    {
+        "id": 12, 
+        "metrics": "fault_fault_3-2.csv",
+        "root_causes":[
+            "IO_EVENT_AvgWaitTime"
+        ]
     }
 ]

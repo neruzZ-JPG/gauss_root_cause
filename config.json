@@ -1,6 +1,6 @@
 {
     "smooth_method": "from_paper",
-    "anomaly_detection_method": "all",
+    "anomaly_detection_method": "fluxInfer",
     "data_dir": "./data",
     "data_file": "data.json",
     "cache_dir": "./cache",
