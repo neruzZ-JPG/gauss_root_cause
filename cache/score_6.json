@@ -1,8 +1,0 @@
-{
-    "kB_wr/s": 0.19818886145857412,
-    "physical_reads_per_second": 0.169752114837659,
-    "rows_inserted_per_second": 0.16806174290943773,
-    "kB_rd/s": 0.16490531060436434,
-    "filesys_use_rate": 0.15088150873517828,
-    "disk_total_read": 0.1482104614547861
-}
